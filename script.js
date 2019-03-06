@@ -25,9 +25,7 @@ function createListElement() {
     divRight.classList.add('insideLiRight');
     reduceInputLength();
     divCenter.appendChild(document.createTextNode(input.value));
-    divCenter.addEventListener('click', function () {
-        divCenter.classList.toggle('done');
-    });
+    divCenter.addEventListener('click', () => divCenter.classList.toggle('done'));
     divRight.appendChild(createDeleteButton());
     list.appendChild(ul);
     ul.appendChild(li);
